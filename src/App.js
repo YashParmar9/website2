@@ -8,15 +8,12 @@ import Service from './component/Service';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer'
 import { Routes, Route } from 'react-router-dom'
-// import img2 from './image7.jpg'
 
 
 function App() {
   return (
     <>
-    {/* <div className="abc">
-      <img src={img2} className="abcd" ></img> */}
-    <Navbar />
+       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='*' element={<Home />} />
@@ -25,7 +22,6 @@ function App() {
         <Route path='/service' element={<Service />} />
       </Routes>
       <Footer />
-   {/* </div> */}
     </>
   );
 }
